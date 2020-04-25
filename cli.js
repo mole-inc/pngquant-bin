@@ -3,4 +3,4 @@
 const execa = require('execa');
 const m = require('.');
 
-execa(m, process.argv.slice(2), {stdio: 'inherit'});
+execa.sync(m, process.argv.slice(2), {stdio: 'inherit'});

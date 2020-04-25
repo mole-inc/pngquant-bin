@@ -1,14 +1,17 @@
-# pngquant-bin [![Build Status](https://travis-ci.org/imagemin/pngquant-bin.svg?branch=master)](https://travis-ci.org/imagemin/pngquant-bin)
+# pngquant-bin ![Node CI](https://github.com/mole-inc/pngquant-bin/workflows/Node%20CI/badge.svg)
 
 > [`pngquant`](https://github.com/pornel/pngquant) is a PNG compressor that significantly reduces file sizes by converting images to a more efficient 8-bit PNG format
 
-You probably want [`imagemin-pngquant`](https://github.com/imagemin/imagemin-pngquant) instead.
+You probably want [`imagemin-pngquant`](https://github.com/mole-inc/imagemin-pngquant) instead.
 
+
+[![Downloads](https://badgen.net/npm/dm/@mole-inc/pngquant-bin)](https://www.npmjs.com/package/@mole-inc/pngquant-bin)
+[![Version](https://badgen.net/npm/v/@mole-inc/pngquant-bin)](https://www.npmjs.com/package/@mole-inc/pngquant-bin)
 
 ## Install
 
 ```
-$ npm install pngquant-bin
+$ npm install @mole-inc/pngquant-bin
 ```
 
 
@@ -16,7 +19,7 @@ $ npm install pngquant-bin
 
 ```js
 const execFile = require('child_process').execFile;
-const pngquant = require('pngquant-bin');
+const pngquant = require('@mole-inc/pngquant-bin');
 
 execFile(pngquant, ['-o', 'output.png', 'input.png'], err => {
 	console.log('Image minified!');
@@ -27,7 +30,7 @@ execFile(pngquant, ['-o', 'output.png', 'input.png'], err => {
 ## CLI
 
 ```
-$ npm install --global pngquant-bin
+$ npm install --global @mole-inc/pngquant-bin
 ```
 
 ```
@@ -46,4 +49,7 @@ The Linux binaries are statically linked so they should work on all Linux distri
 
 ## License
 
-MIT © [Imagemin](https://github.com/imagemin)
+This is a fork of [imagemin/optipng-bin](https://github.com/imagemin/optipng-bin) licensed under the MIT License.
+
+see license file.<br>
+pngquant is licensed under the [GPL v3](https://raw.githubusercontent.com/kornelski/pngquant/master/COPYRIGHT).
