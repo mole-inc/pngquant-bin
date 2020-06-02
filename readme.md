@@ -1,6 +1,6 @@
 # pngquant-bin ![Node CI](https://github.com/mole-inc/pngquant-bin/workflows/Node%20CI/badge.svg)
 
-> [`pngquant`](https://github.com/pornel/pngquant) is a PNG compressor that significantly reduces file sizes by converting images to a more efficient 8-bit PNG format
+> [`pngquant`](https://github.com/kornelski/pngquant) is a PNG compressor that significantly reduces file sizes by converting images to a more efficient 8-bit PNG format
 
 You probably want [`imagemin-pngquant`](https://github.com/mole-inc/imagemin-pngquant) instead.
 
@@ -49,7 +49,7 @@ The Linux binaries are statically linked so they should work on all Linux distri
 
 ## License
 
-This is a fork of [imagemin/optipng-bin](https://github.com/imagemin/optipng-bin) licensed under the MIT License.
+This is a fork of [imagemin/pngquant-bin](https://github.com/imagemin/pngquant-bin) licensed under the GPL v3.
 
 see license file.<br>
 pngquant is licensed under the [GPL v3](https://raw.githubusercontent.com/kornelski/pngquant/master/COPYRIGHT).
