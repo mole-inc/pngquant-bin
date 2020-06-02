@@ -2,7 +2,7 @@
 	"name": "@mole-inc/pngquant-bin",
 	"version": "6.0.0",
 	"description": "`pngquant` wrapper that makes it seamlessly",
-	"license": "MIT",
+	"license": "GPL-3.0+",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mole-inc/pngquant-bin.git"
