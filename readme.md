@@ -1,4 +1,4 @@
-# pngquant-bin ![Node CI](https://github.com/mole-inc/pngquant-bin/workflows/Node%20CI/badge.svg)
+# pngquant-bin [![Node CI](https://github.com/mole-inc/pngquant-bin/actions/workflows/nodejs.yml/badge.svg)](https://github.com/mole-inc/pngquant-bin/actions/workflows/nodejs.yml)
 
 > [`pngquant`](https://github.com/kornelski/pngquant) is a PNG compressor that significantly reduces file sizes by converting images to a more efficient 8-bit PNG format
 
@@ -18,8 +18,8 @@ $ npm install @mole-inc/pngquant-bin
 ## Usage
 
 ```js
-const execFile = require('child_process').execFile;
-const pngquant = require('@mole-inc/pngquant-bin');
+import {execFile} from 'child_process';
+import pngquant from '@mole-inc/pngquant-bin';
 
 execFile(pngquant, ['-o', 'output.png', 'input.png'], err => {
 	console.log('Image minified!');
