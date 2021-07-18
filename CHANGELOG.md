@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [8.0.0](https://github.com/mole-inc/pngquant-bin/compare/v7.0.0...v8.0.0) (2021-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* require node.js 12 (#2)
+
+### Features
+
+* require node.js 12 ([#2](https://github.com/mole-inc/pngquant-bin/issues/2)) ([624410e](https://github.com/mole-inc/pngquant-bin/commit/624410e46c6725e410eb7626efdadd45e8b52819))
+
 ## [7.0.0](https://github.com/mole-inc/pngquant-bin/compare/v6.0.0...v7.0.0) (2020-06-02)
 
 
