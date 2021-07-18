@@ -1,11 +1,14 @@
-const path = require('path');
-const test = require('ava');
-const execa = require('execa');
-const tempy = require('tempy');
-const binCheck = require('bin-check');
-const compareSize = require('compare-size');
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+import test from 'ava';
+import execa from 'execa';
+import tempy from 'tempy';
+import binCheck from 'bin-check';
+import compareSize from 'compare-size';
+import pngquant from './lib/index.js';
 
-const m = require('.');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /* Rebuild test
 import fs from 'fs';
@@ -24,7 +27,7 @@ test('rebuild the pngquant binaries', async t => {
 */
 
 test('verify binary', async t => {
-	t.true(await binCheck(m, ['--version']));
+	t.true(await binCheck(pngquant, ['--version']));
 });
 
 test('minify a png', async t => {
@@ -34,10 +37,10 @@ test('minify a png', async t => {
 	const args = [
 		'-o',
 		dest,
-		src
+		src,
 	];
 
-	await execa(m, args);
+	await execa(pngquant, args);
 	const result = await compareSize(src, dest);
 
 	t.true(result[dest] < result[src]);
